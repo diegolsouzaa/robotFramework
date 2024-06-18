@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0 (Python 3.10.12 on linux)" generated="2024-03-20T13:28:55.115669" rpa="false" schemaversion="5">
+<suite id="s1" name="keywordsComArgumentos" source="/home/s2it_dsouza/workspace/CursoUdemy/RobotFramework/WebTesting/keywordsComArgumentos.robot">
+<test id="s1-t1" name="Cenario 1 - Deve montar um email" line="6">
+<kw name="Gerar um email aleatório com nome &quot;Pedro&quot; e sobrenome &quot;Nascimento&quot;" owner="keywordsComArgumentosResource" source_name="Gerar um email aleatório com nome &quot;${NOME}&quot; e sobrenome &quot;${SOBRENOME}&quot;">
+<kw name="Word" owner="FakerLibrary">
+<msg time="2024-03-20T13:28:55.333031" level="INFO">${PALAVRA_ALEATORIA} = miss</msg>
+<var>${PALAVRA_ALEATORIA}</var>
+<doc>Generate a word.</doc>
+<status status="PASS" start="2024-03-20T13:28:55.332871" elapsed="0.000186"/>
+</kw>
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2024-03-20T13:28:55.333768" level="INFO">${EMAIL} = PedroNascimentomiss@testerobot.com</msg>
+<var>${EMAIL}</var>
+<arg>${NOME}${SOBRENOME}${PALAVRA_ALEATORIA}${DOMINIO}</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2024-03-20T13:28:55.333567" elapsed="0.000222"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${EMAIL}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-03-20T13:28:55.333888" elapsed="0.000131"/>
+</kw>
+<status status="PASS" start="2024-03-20T13:28:55.332326" elapsed="0.001761"/>
+</kw>
+<tag>email_aleatorio</tag>
+<status status="PASS" start="2024-03-20T13:28:55.331794" elapsed="0.002405"/>
+</test>
+<status status="PASS" start="2024-03-20T13:28:55.116453" elapsed="0.218046"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="1" fail="0" skip="0">email_aleatorio</stat>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="keywordsComArgumentos">keywordsComArgumentos</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
